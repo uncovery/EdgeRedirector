@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Edge Redirector",
+    "version": "1.19",
+    "description": "Redirects specified domains to Microsoft Edge",
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+    },
+    "permissions": [
+        "storage",
+        "webNavigation",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_ui": {
+        "page": "options.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "edgeredirector@werkraum.hk",
+            "strict_min_version": "100.0"
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Edge Redirector Settings</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      width: 500px;
+    }
+    textarea { 
+      width: 100%; 
+      height: 150px; 
+      margin: 10px 0;
+    }
+    .status {
+      color: green;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Edge Redirector Settings</h1>
+  
+  <label>
+    <input type="checkbox" id="askForConfirmation">
+    Ask for confirmation before opening in Edge
+  </label>
+  
+  <p>Domains to redirect to Edge (one per line):</p>
+  <textarea id="domainsList"></textarea>
+  
+  <button id="save">Save Settings</button>
+  <div id="status" class="status"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
