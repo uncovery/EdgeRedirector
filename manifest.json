@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Edge Redirector",
-    "version": "1.21",
+    "version": "1.22",
     "description": "Redirects specified domains to Microsoft Edge",
     "icons": {
         "48": "icons/icon-48.png",
