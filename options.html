@@ -27,7 +27,18 @@
     <input type="checkbox" id="askForConfirmation">
     Ask for confirmation before opening in Edge
   </label>
-  
+
+  <p>When a matched domain is opened:</p>
+  <label>
+    <input type="radio" name="openMode" value="edgeOnly" id="openModeEdgeOnly">
+    Open only in Edge (cancel Firefox navigation)
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="openMode" value="both" id="openModeBoth">
+    Open in both browsers
+  </label>
+
   <p>Domains to redirect to Edge (one per line):</p>
   <textarea id="domainsList"></textarea>
   

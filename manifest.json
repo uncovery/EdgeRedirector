@@ -1,15 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Edge Redirector",
-    "version": "1.20",
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "@extension-without-data-collection",
-            "data_collection_permissions": {
-                "required": ["none"]
-            }
-        }
-    },
+    "version": "1.21",
     "description": "Redirects specified domains to Microsoft Edge",
     "icons": {
         "48": "icons/icon-48.png",
@@ -34,7 +26,10 @@
     "browser_specific_settings": {
         "gecko": {
             "id": "edgeredirector@werkraum.hk",
-            "strict_min_version": "144.0"
+            "strict_min_version": "144.0",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
         }
     }
 
